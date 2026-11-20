@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>点亮灯泡</title>
+</head>
+<body>
+    <h2>点亮灯泡</h2>
+    <img id="bulb" onclick="toggleLight()" src="https://www.w3schools.com/js/pic_bulboff.gif">
+    <script>
+        function toggleLight(){
+            const bulb = document.getElementById('bulb');
+            if(bulb.src.includes("pic_bulboff.gif")){
+                bulb.src = "https://www.w3schools.com/js/pic_bulbon.gif";
+            }else{
+                bulb.src = "https://www.w3schools.com/js/pic_bulboff.gif";
+            }
+        }
+    </script>
+</body>
+</html>
